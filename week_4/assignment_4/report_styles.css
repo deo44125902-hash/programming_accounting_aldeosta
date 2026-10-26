@@ -1,0 +1,95 @@
+body {
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    margin: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+header h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+main {
+    margin: 20px 0;
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+section h3 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+#balance-sheet {
+    width: 90%;
+    border-collapse: collapse;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.12);
+    background-color: white;
+}
+
+#balance-sheet th,
+#balance-sheet td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+#balance-sheet thead {
+    background-color: #2c3e50;
+    color: white;
+}
+
+#balance-sheet tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+#balance-sheet td:nth-child(3) {
+    text-align: right;
+}
+
+#balance-sheet tfoot {
+    background-color: #e0e0e0;
+    font-weight: bold;
+}
+
+#balance-sheet tfoot td {
+    text-align: center;
+    padding: 12px;
+}
+
+ol {
+    margin-left: 25px;
+    padding-left: 20px;
+    list-style-type: upper-roman;
+    font-size: 1em;
+    line-height: 1.8;
+}
+
+footer {
+    background-color: #2c3e50;
+    color: white;
+    text-align: center;
+    padding: 12px;
+    margin-top: 25px;
+}
+
+footer p {
+    margin: 0;
+}

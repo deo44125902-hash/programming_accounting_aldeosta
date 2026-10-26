@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Financial Performance Dashboard - ALDEEE Tax Consulting</title>
+    <link rel="stylesheet" href="dashboard_styles.css">
+</head>
+<body>
+
+<header class="site-header">
+    <div>
+        <h1>ALDEEE TAX CONSULTING</h1>
+        <p>Financial Performance Dashboard</p>
+    </div>
+
+    <nav aria-label="Main navigation">
+        <a href="#dashboard">Dashboard</a>
+        <a href="#financial-reports">Financial Reports</a>
+        <a href="#data-input">Data Input</a>
+        <a href="#settings">Settings</a>
+    </nav>
+</header>
+
+<aside class="sidebar">
+    <h2>Financial Menu</h2>
+    <nav aria-label="Financial menu">
+        <a href="#summary">Summary</a>
+        <a href="#income-statement">Income Statement</a>
+        <a href="#balance-sheet">Balance Sheet</a>
+        <a href="#cash-flow">Cash Flow</a>
+        <a href="#transaction-recording">Transaction Recording</a>
+    </nav>
+</aside>
+
+<main id="dashboard">
+
+    <section id="summary">
+        <h2>Company Summary</h2>
+        <p class="report-date">Financial Report as of December 31, 2026</p>
+
+        <div class="summary-cards">
+            <article class="summary-card">
+                <h3>Total Revenue</h3>
+                <p class="amount">Not provided</p>
+                <p class="card-note">Revenue data is not included in the Week 4 report.</p>
+            </article>
+
+            <article class="summary-card">
+                <h3>Total Expenses</h3>
+                <p class="amount">Not provided</p>
+                <p class="card-note">Expense data is not included in the Week 4 report.</p>
+            </article>
+
+            <article class="summary-card">
+                <h3>Net Profit</h3>
+                <p class="amount">IDR 5,000,000</p>
+                <p class="card-note">Current Year Profit from the balance sheet.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="financial-reports" class="panel">
+        <h2>Expenses by Category</h2>
+
+        <div class="table-wrap">
+            <table class="expense-table">
+                <thead>
+                    <tr>
+                        <th>Expense Category</th>
+                        <th>January (IDR)</th>
+                        <th>February (IDR)</th>
+                        <th>March (IDR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Salaries</td>
+                        <td>6,500,000</td>
+                        <td>6,500,000</td>
+                        <td>6,750,000</td>
+                    </tr>
+                    <tr>
+                        <td>Rent</td>
+                        <td>2,000,000</td>
+                        <td>2,000,000</td>
+                        <td>2,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Utilities</td>
+                        <td>850,000</td>
+                        <td>910,000</td>
+                        <td>875,000</td>
+                    </tr>
+                    <tr>
+                        <td>Office Supplies</td>
+                        <td>400,000</td>
+                        <td>325,000</td>
+                        <td>460,000</td>
+                    </tr>
+                    <tr class="total-row">
+                        <th>Total</th>
+                        <td>9,750,000</td>
+                        <td>9,735,000</td>
+                        <td>10,085,000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <section id="data-input" class="panel">
+        <h2>Record Expense</h2>
+
+        <form class="expense-form" action="#" method="get">
+            <div class="form-field">
+                <label for="category">Expense Category</label>
+                <select id="category" name="category" required>
+                    <option value="">Select category</option>
+                    <option value="salaries">Salaries</option>
+                    <option value="rent">Rent</option>
+                    <option value="utilities">Utilities</option>
+                    <option value="office-supplies">Office Supplies</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+
+            <div class="form-field">
+                <label for="date">Date</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-field">
+                <label for="amount">Amount (IDR)</label>
+                <input type="number" id="amount" name="amount"
+                       min="1" placeholder="Enter amount" required>
+            </div>
+
+            <div class="form-field">
+                <label for="description">Description</label>
+                <input type="text" id="description" name="description"
+                       placeholder="Enter description">
+            </div>
+
+            <button type="submit">Record Expense</button>
+        </form>
+    </section>
+
+    <section id="income-statement" class="panel">
+        <h2>Income Statement</h2>
+        <p>Revenue and expense details are not included in the provided Week 4 report.</p>
+    </section>
+
+    <section id="balance-sheet" class="panel">
+        <h2>Statement of Financial Position</h2>
+        <p>As of December 31, 2026</p>
+
+        <div class="table-wrap">
+            <table class="financial-table">
+                <thead>
+                    <tr>
+                        <th>Category</th>
+                        <th>Account</th>
+                        <th>Amount (IDR)</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="5">Assets</td>
+                        <td>Cash</td>
+                        <td>18,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Accounts Receivable</td>
+                        <td>12,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Inventory</td>
+                        <td>25,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Equipment</td>
+                        <td>35,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Vehicle</td>
+                        <td>45,000,000</td>
+                    </tr>
+                    <tr class="total-row">
+                        <th colspan="2">Total Assets</th>
+                        <td>135,000,000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Liabilities</td>
+                        <td>Accounts Payable</td>
+                        <td>20,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Wages Payable</td>
+                        <td>8,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Long-Term Bank Loan</td>
+                        <td>40,000,000</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="3">Equity</td>
+                        <td>Share Capital</td>
+                        <td>50,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Retained Earnings</td>
+                        <td>12,000,000</td>
+                    </tr>
+                    <tr>
+                        <td>Current Year Profit</td>
+                        <td>5,000,000</td>
+                    </tr>
+                    <tr class="total-row">
+                        <th colspan="2">Total Liabilities and Equity</th>
+                        <td>135,000,000</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Assets = Liabilities + Equity</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </div>
+    </section>
+
+    <section id="cash-flow" class="panel">
+        <h2>Cash Flow</h2>
+        <p>Cash flow details are not included in the provided Week 4 report.</p>
+    </section>
+
+    <section id="transaction-recording" class="panel">
+        <h2>Transaction Recording</h2>
+        <p>Use the Record Expense form to enter expense information.</p>
+    </section>
+
+    <section id="settings" class="panel">
+        <h2>Settings</h2>
+        <p>Dashboard settings and company preferences.</p>
+    </section>
+
+</main>
+
+<footer>
+    <p>Created by Aldeosta Putra Ananda - 4.41.25.9.02 for Basic Programming Course</p>
+    <p>&copy; 2026 ALDEEE Tax Consulting</p>
+</footer>
+
+</body>
+</html>

@@ -1,368 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Account Procedure Lists</title>
+
+    <title>PT Aldeee - Tax Office</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .logo-img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        .office-image {
+            width: 250px;
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 15px auto;
+            border-radius: 8px;
+        }
+    </style>
+
 </head>
 
 <body>
 
-    <h1>Chart of Accounts - Maju Jaya Company</h1>
+    <header class="header" id="home">
 
-    <h2>By Account Code</h2>
+        <div class="header-logo-badge">
+            <img src="ALDE.jpg"
+                 alt="Logo PT Aldeee"
+                 class="logo-img">
+        </div>
 
-    <ol>
-        <li>1000 - Assets
-            <ul>
-                <li>1100 - Current Assets
-                    <ol>
-                        <li>1110 - Cash</li>
-                        <li>1120 - Bank</li>
-                        <li>1130 - Accounts Receivable</li>
-                        <li>1140 - Inventory</li>
-                    </ol>
-                </li>
+        <div class="header-badge">Professional Tax Services & Consulting</div>
 
-                <li>1200 - Fixed Assets
-                    <ol>
-                        <li>1210 - Land</li>
-                        <li>1220 - Buildings</li>
-                        <li>1230 - Office Equipment</li>
-                    </ol>
-                </li>
-            </ul>
-        </li>
+        <h1>PT ALDEEEE TAX OFFICE</h1>
 
-        <li>2000 - Liabilities
-            <ul>
-                <li>2100 - Current Liabilities
-                    <ol>
-                        <li>2110 - Accounts Payable</li>
-                        <li>2120 - Salaries Payable</li>
-                    </ol>
-                </li>
-
-                <li>2200 - Long-Term Liabilities
-                    <ol>
-                        <li>2210 - Bank Loans</li>
-                    </ol>
-                </li>
-            </ul>
-        </li>
-
-        <li>3000 - Equity
-            <ul>
-                <li>3100 - Share Capital</li>
-                <li>3110 - Retained Earnings</li>
-            </ul>
-        </li>
-
-        <li>4000 - Revenue
-            <ul>
-                <li>4100 - Service Revenue</li>
-            </ul>
-        </li>
-
-        <li>5000 - Expenses
-            <ul>
-                <li>5100 - Salaries Expense</li>
-                <li>5200 - Rent Expense</li>
-            </ul>
-        </li>
-    </ol>
-
-
-    <h2>Cash Receipt Recording Procedure</h2>
-
-    <ol type="1">
-        <li>Receive transaction evidence (e.g., receipt).</li>
-        <li>Verify completeness and validity of transaction evidence.</li>
-        <li>Identify involved accounts (e.g., Cash, Accounts Receivable/Revenue).</li>
-        <li>Record transaction in the Cash Receipts Journal.</li>
-        <li>Post to the General Ledger.</li>
-        <li>Archive transaction evidence.</li>
-    </ol>
-    
-    <h1>General Journal</h1>
-    <table>
-        <caption>Transactions for March 2025</caption>
-        <thead>
-            <tr>
-                <th colspan="3">Transaction Details</th>
-                <th>Account</th>
-                <th>Debit (IDR)</th>
-                <th>Credit (IDR)</th>
-            </tr>
-            <tr>
-                <th>Date</th>
-                <th>Ref. No.</th>
-                <th>Description</th>
-                <th></th>
-                <th></th>
-                <th></th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>2025-03-01</td>
-                <td>TRX001</td>
-                <td>Cash Receipt from Service Revenue</td>
-                <td>Cash</td>
-                <td>10,000,000</td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td colspan="3"></td>
-                <td>Service Revenue</td>
-                <td></td>
-                <td>10,000,000</td>
-            </tr>
-
-            <tr>
-                <td rowspan="2">2025-03-05</td>
-                <td rowspan="2">TRX002</td>
-                <td rowspan="2">Cash Purchase of Office Equipment</td>
-                <td>Office Equipment</td>
-                <td>2,500,000</td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td>Cash</td>
-                <td></td>
-                <td>2,500,000</td>
-            </tr>
-
-            <tr>
-                <td>2025-03-10</td>
-                <td>TRX003</td>
-                <td>Payment of Employee Salaries</td>
-                <td>Salaries Expense</td>
-                <td>1,500,000</td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td colspan="3"></td>
-                <td>Cash</td>
-                <td></td>
-                <td>1,500,000</td>
-            </tr>
-
-            <tr>
-                <td>2025-03-15</td>
-                <td>TRX004</td>
-                <td>Payment of Office Rent</td>
-                <td>Rent Expense</td>
-                <td>1,000,000</td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td colspan="3"></td>
-                <td>Cash</td>
-                <td></td>
-                <td>1,000,000</td>
-            </tr>
-
-            <tr>
-                <td>2025-03-20</td>
-                <td>TRX005</td>
-                <td>Receipt of Accounts Receivable</td>
-                <td>Cash</td>
-                <td>5,000,000</td>
-                <td></td>
-            </tr>
-
-            <tr>
-                <td colspan="3"></td>
-                <td>Accounts Receivable</td>
-                <td></td>
-                <td>5,000,000</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <td colspan="4"><strong>TOTAL</strong></td>
-                <td><strong>20,000,000</strong></td>
-                <td><strong>20,000,000</strong></td>
-            </tr>
-        </tfoot>
-    </table>
-
-    
-    <h2>Cash Movement Report (Summary)</h2>
-    <table>
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Description</th>
-                <th>Receipts (IDR)</th>
-                <th>Disbursements (IDR)</th>
-                <th>Balance (IDR)</th>
-            </tr>
-        </thead>
-
-        <tbody>
-            <tr>
-                <td>2025-03-01</td>
-                <td>Beginning Balance</td>
-                <td></td>
-                <td></td>
-                <td>5,000,000</td>
-            </tr>
-
-            <tr>
-                <td>2025-03-01</td>
-                <td>Receipt of Accounts Receivable</td>
-                <td>5,000,000</td>
-                <td></td>
-                <td>10,000,000</td>
-            </tr>
-
-            <tr>
-                <td>2025-03-05</td>
-                <td>Equipment Purchase</td>
-                <td></td>
-                <td>2,500,000</td>
-                <td>7,500,000</td>
-            </tr>
-
-            <tr>
-                <td>2025-03-10</td>
-                <td>Salary Payment</td>
-                <td></td>
-                <td>1,500,000</td>
-                <td>6,000,000</td>
-            </tr>
-        </tbody>
-
-        <tfoot>
-            <tr>
-                <td colspan="4"><strong>Ending Balance</strong></td>
-                <td><strong>6,000,000</strong></td>
-            </tr>
-        </tfoot>
-    </table>
-
-    <!DOCTYPE html>
-<html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALDEE GANK - Tax Consultant Services</title>
-</head>
-<body>
-
-    <!-- Header Section -->
-    <header>
-        <img src="../exercise_2.3/ALDE.jpg" 
-             alt="ALDEE GANK Tax Consulting Office Logo" 
-             width="150" height="auto">
-
-        <h1>ALDEE GANK Tax Consulting</h1>
-
-        <p> 
-            Trusted solutions for tax efficiency and compliance for your business.
+        <p>
+            Your <strong>trusted</strong> partner for professional tax
+            consulting, accurate tax reporting, and reliable tax services.
         </p>
+
     </header>
-    
-    <hr>
 
-    <!-- Main Content -->
-    <main>
+    <nav class="main-navigation" aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#about">About Our Company</a>
+        <a href="#services">Our Services</a>
+        <a href="#workflow">Tax Service Workflow</a>
+        <a href="#consultation">Consultation Form</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
-        <!-- Profile Section -->
-        <section>
-            <h2>Our Profile & Vision</h2>
+    <div class="container">
 
-            <p>
-                <strong>ALDEE GANK</strong> is a professional tax consulting office
-                that helps companies and individuals manage their tax obligations
-                <em>efficiently</em>, accurately, and in accordance with
-                applicable tax regulations in Indonesia.
+        <main>
+
+            <section class="card" id="about">
+
+                <h2 class="section-title">About Our Company</h2>
+
+                <p>
+                    PT Aldeee Tax Office is a company engaged in taxation
+                    services and consulting. We aim to help individuals
+                    and businesses understand and fulfill their tax
+                    obligations correctly, efficiently, and in accordance
+                    with applicable tax regulations.
+                </p>
+
+                <img src="../exercise_2.3/pt_alde.jpeg"
+                     alt="PT Aldeee Tax Office Building"
+                     class="office-image">
+
+                <div class="grid" style="margin-top: 20px; margin-bottom: 20px;">
+
+                    <section aria-labelledby="vision-title">
+
+                        <strong id="vision-title"
+                                style="color: var(--primary-blue); display: block; margin-bottom: 4px;">
+                            Our Vision
+                        </strong>
+
+                        <p style="font-size: 0.9rem;">
+                            To become a trusted tax consulting company
+                            that provides professional services,
+                            accurate information, and excellent
+                            customer satisfaction.
+                        </p>
+
+                    </section>
+
+                    <section aria-labelledby="mission-title">
+
+                        <strong id="mission-title"
+                                style="color: var(--primary-green); display: block; margin-bottom: 4px;">
+                            Our Mission
+                        </strong>
+
+                        <p style="font-size: 0.9rem;">
+                            To provide reliable tax consulting,
+                            assist with tax reporting and calculations,
+                            maintain professional service standards,
+                            and help clients comply with tax regulations.
+                        </p>
+
+                    </section>
+
+                </div>
+
+                <img src="suasana.jpeg"
+                     alt="PT Aldeee Tax Office Team"
+                     class="office-image">
+
+            </section>
+
+            <hr class="custom-hr">
+
+            <div class="grid">
+
+                <section class="card" id="services">
+
+                    <h2 class="section-title emerald">Our Services</h2>
+
+                    <h3 style="color: var(--text-dark); font-size: 1.1rem; margin-bottom: 8px;">
+                        Our Main Tax Services
+                    </h3>
+
+                    <ul class="custom-list">
+                        <li>Individual and Corporate Tax Consultation</li>
+                        <li>Annual Tax Return (SPT) Preparation and Reporting</li>
+                        <li>Monthly Tax Calculation and Reporting</li>
+                        <li>Tax Administration and Documentation Assistance</li>
+                        <li>Tax Planning and Compliance Services</li>
+                    </ul>
+
+                </section>
+
+                <section class="card" id="workflow">
+
+                    <h2 class="section-title">Tax Service Workflow</h2>
+
+                    <h3 style="color: var(--text-dark); font-size: 1.1rem; margin-bottom: 8px;">
+                        3 Steps to Get Our Services
+                    </h3>
+
+                    <ol class="custom-list">
+                        <li>Clients contact our team and explain their tax needs.</li>
+                        <li>Our team reviews the client's documents and provides tax consultation.</li>
+                        <li>Tax calculations, reporting, and administrative processes are completed according to applicable regulations.</li>
+                    </ol>
+
+                </section>
+
+            </div>
+
+            <article class="callout" aria-label="Key advantage">
+
+                <strong>Our Advantage:</strong>
+
+                PT Aldeee Tax Office focuses on professional tax services,
+                accurate calculations, regulatory compliance, and reliable
+                consultation to help clients manage their tax obligations.
+
+            </article>
+
+            <hr class="custom-hr">
+
+            <section class="interactive-box" id="consultation">
+
+                <h2 class="section-title gradient-text">
+                    Request Tax Consultation
+                </h2>
+
+                <p>
+                    Enter your contact details and select the tax service
+                    you need. Our team can use this information to follow
+                    up on your consultation request.
+                </p>
+
+                <form action="#"
+                      method="POST"
+                      class="form-grid"
+                      onsubmit="event.preventDefault(); alert('Thank you for contacting PT Aldeee Tax Office!');">
+
+                    <div class="form-group">
+
+                        <label for="fullname">Full Name</label>
+
+                        <input type="text"
+                               id="fullname"
+                               name="fullname"
+                               placeholder="Enter your full name"
+                               required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="email">Email Address</label>
+
+                        <input type="email"
+                               id="email"
+                               name="email"
+                               placeholder="your.name@gmail.com"
+                               required>
+
+                    </div>
+
+                    <div class="form-group full-width">
+
+                        <label for="service">Select Tax Service</label>
+
+                        <select id="service" name="service" required>
+
+                            <option value="">-- Choose a Tax Service --</option>
+                            <option value="tax-consultation">Tax Consultation</option>
+                            <option value="annual-tax-return">Annual Tax Return (SPT)</option>
+                            <option value="monthly-tax-reporting">Monthly Tax Reporting</option>
+                            <option value="tax-administration">Tax Administration</option>
+                            <option value="tax-planning">Tax Planning</option>
+
+                        </select>
+
+                    </div>
+
+                    <button type="submit" class="btn-submit">
+                        Submit Consultation Request
+                    </button>
+
+                </form>
+
+            </section>
+
+        </main>
+
+        <hr class="custom-hr">
+
+        <aside class="tax-resources" id="resources">
+
+            <strong style="display: block; margin-bottom: 8px; color: var(--text-dark);">
+                Useful Tax Resources
+            </strong>
+
+            <a href="https://pajak.go.id"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="link-badge">
+                Directorate General of Taxes (DJP)
+            </a>
+
+            <a href="https://oss.go.id"
+               target="_blank"
+               rel="noopener noreferrer"
+               class="link-badge">
+                Online Single Submission (OSS)
+            </a>
+
+        </aside>
+
+        <footer class="footer-grid" id="contact">
+
+            <div class="contact-info">
+
+                <strong style="display: block; margin-bottom: 8px; color: var(--text-dark);">
+                    Contact PT Aldeee Tax Office
+                </strong>
+
+                <p style="margin-bottom: 4px;">
+                    Email:
+                    <a href="mailto:info@aldeeee.com">
+                        info@aldeeee.com
+                    </a>
+                </p>
+
+                <p>
+                    Phone:
+                    <a href="tel:+622412345678">(024) 1234-5678</a>
+                </p>
+
+            </div>
+
+            <p class="copyright">
+                &copy; 2026 PT Aldeee Tax Office. All rights reserved.
             </p>
 
-            <p>
-                Our vision is to become a partner who can help business owners
-                achieve good <strong>tax compliance</strong>
-                while supporting business growth.
-            </p>
+        </footer>
 
-            <p>
-                ALDEE GANK provides tax consultation, calculation, and reporting
-                services through a simple process that is easy for clients to understand.
-            </p>
-        </section>
+    </div>
 
-        <hr>
-
-        <!-- Services Section -->
-        <section>
-            <h2>Tax Services</h2>
-             <img src="../exercise_2.3/suasana.jpeg"
-                 alt="ALDEE GANK Tax Consulting Office Atmosphere" 
-                 width="400" height="auto">
-            
-            <h3>Our Main Services</h3>
-
-            <ul>
-                <li>
-                    <strong>Corporate & Individual Income Tax:</strong>
-                    Calculation, reporting, and income tax planning.
-                </li>
-
-                <li>
-                    <strong>VAT & Luxury Goods Sales Tax:</strong>
-                    Tax Invoice management and VAT periodic tax return reporting.
-                </li>
-
-                <li>
-                    <strong>Annual Tax Return Reporting:</strong>
-                    Assistance with the preparation and submission of annual tax returns.
-                </li>
-
-                <li>
-                    <strong>Tax Audit Assistance:</strong>
-                    Assistance in dealing with tax audits from tax authorities.
-                </li>
-            </ul>
-
-            <h3>3 Easy Steps to Use Our Services</h3>
-
-            <ol>
-                <li>
-                    <strong>Initial Consultation:</strong>
-                    Discussion about your tax needs and problems.
-                </li>
-
-                <li>
-                    <strong>Analysis & Strategy:</strong>
-                    We conduct an analysis and provide tax recommendations.
-                </li>
-
-                <li>
-                    <strong>Execution & Reporting:</strong>
-                    Completing tax administration and reporting on time.
-                </li>
-            </ol>
-        </section>
-
-        <hr>
-
-        <!-- Contact & External Links Section -->
-        <section>
-            <h2>Contact Us & Official Information</h2>
-            
-            <h3>Our Advantages</h3>
-
-            <p>
-                We maintain <em>data confidentiality</em>, calculation accuracy,
-                and strive to keep up with the latest tax regulations.
-            </p>
 </body>
 </html>

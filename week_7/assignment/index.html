@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive General Journal Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Interactive General Journal Form</h1>
+
+    <div class="container">
+        <h2>Journal Transaction</h2>
+
+        <div class="form-group">
+            <label for="date">Date:</label>
+            <input type="date" id="date">
+        </div>
+
+        <div class="form-group">
+            <label for="refNo">Reference Number:</label>
+            <input type="text" id="refNo" placeholder="Enter reference number">
+        </div>
+
+        <div class="form-group">
+            <label for="description">Description:</label>
+            <input type="text" id="description" placeholder="Enter transaction description">
+        </div>
+
+        <div class="form-group">
+            <label for="account">Account:</label>
+            <select id="account">
+                <option value="">Select Account</option>
+                <option value="Cash">Cash</option>
+                <option value="Bank">Bank</option>
+                <option value="Accounts Receivable">Accounts Receivable</option>
+                <option value="Service Revenue">Service Revenue</option>
+                <option value="Salaries Expense">Salaries Expense</option>
+                <option value="Accounts Payable">Accounts Payable</option>
+                <option value="Share Capital">Share Capital</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+            <label for="debit">Debit (IDR):</label>
+            <input type="number" id="debit" placeholder="0">
+        </div>
+
+        <div class="form-group">
+            <label for="credit">Credit (IDR):</label>
+            <input type="number" id="credit" placeholder="0">
+        </div>
+
+        <button id="addBtn">Add Transaction Row</button>
+
+        <h2>General Journal</h2>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Ref No</th>
+                    <th>Description</th>
+                    <th>Account</th>
+                    <th>Debit</th>
+                    <th>Credit</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody id="journalBody">
+            </tbody>
+        </table>
+
+        <button id="saveBtn">Save Journal</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

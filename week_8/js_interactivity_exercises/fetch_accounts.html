@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Account Data</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: #2c3e50; }
+        button { padding: 10px 20px; background-color: #007bff; color: white; border:
+        none; border-radius: 5px; cursor: pointer; margin-bottom: 20px; }
+        button:hover { background-color: #0056b3; }
+        #accountListJson { border: 1px solid #ccc; padding: 15px; border-radius: 5px;
+        background-color: #f9f9f9; }
+        #accountListJson ul { list-style: none; padding: 0; }
+        #accountListJson li { margin-bottom: 5px; padding: 5px; border-bottom: 1px
+        dashed #eee; }
+    </style>
+</head>
+<body>
+    <h1>Account Data from JSON</h1>
+    <button id="loadAccounts">Load Account Data</button>
+    <div id="accountListJson">
+        <p>Click the button to load account data...</p>
+    </div>
+    <script src="fetch_script.js"></script>
+</body>
+</html>

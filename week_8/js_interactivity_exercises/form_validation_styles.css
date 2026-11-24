@@ -1,0 +1,12 @@
+.error-message {
+    color: red;
+    font-size: 0.85em;
+    margin-top: 2px; /* Directly under the input, without covering it */
+    margin-bottom: 10px;
+    display: block; /* Ensure error message is on a new line */
+}
+
+input.invalid {
+    border-color: red !important; /* Mark invalid input */
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.3);
+}

@@ -1,0 +1,52 @@
+[
+    {
+        "code": "111",
+        "name": "Cash",
+        "category": "Current Assets"
+    },
+    {
+        "code": "112",
+        "name": "Bank",
+        "category": "Current Assets"
+    },
+    {
+        "code": "121",
+        "name": "Accounts Receivable",
+        "category": "Current Assets"
+    },
+    {
+        "code": "131",
+        "name": "Inventory",
+        "category": "Current Assets"
+    },
+    {
+        "code": "211",
+        "name": "Accounts Payable",
+        "category": "Current Liabilities"
+    },
+    {
+        "code": "212",
+        "name": "Salaries Payable",
+        "category": "Current Liabilities"
+    },
+    {
+        "code": "311",
+        "name": "Share Capital",
+        "category": "Equity"
+    },
+    {
+        "code": "411",
+        "name": "Service Revenue",
+        "category": "Revenue"
+    },
+    {
+        "code": "511",
+        "name": "Salaries Expense",
+        "category": "Expense"
+    },
+    {
+        "code": "512",
+        "name": "Rent Expense",
+        "category": "Expense"
+    }
+]

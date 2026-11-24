@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-
+scale=1.0">
+    <title>Stopwatch &amp; Timer</title>
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-
+serif; text-align: center; margin-top: 50px; background-color:
+#f0f2f5; }
+        #displayTime { font-size: 3em; font-weight: bold; margin-
+bottom: 20px; color: #2c3e50; }
+        .controls button { padding: 10px 20px; margin: 5px;
+background-color: #007bff; color: white; border: none; border-radius:
+5px; cursor: pointer; transition: background-color 0.3s ease; }
+        .controls button:hover { background-color: #0056b3; }
+        .controls button:nth-child(2) { background-color: #dc3545; }
+        /* Stop button */
+        .controls button:nth-child(2):hover { background-color:
+#c82333; }
+        .controls button:nth-child(3) { background-color: #ffc107;
+color: #333; } /* Reset button */
+        .controls button:nth-child(3):hover { background-color:
+#e0a800; }
+        #timerMessage { margin-top: 30px; font-size: 1.2em; color:
+#555; }
+    </style>
+</head>
+<body>
+    <h1>Simple Stopwatch</h1>
+    <div id="displayTime">00:00:00</div>
+    <div class="controls">
+        <button id="startBtn">Start</button>
+        <button id="stopBtn">Stop</button>
+        <button id="resetBtn">Reset</button>
+    </div>
+    <h2>5-Second Timer</h2>
+    <button id="startTimerBtn">Start 5-Second Timer</button>
+    <p id="timerMessage"></p>
+    <script src="stopwatch.js"></script>
+</body>
+</html>

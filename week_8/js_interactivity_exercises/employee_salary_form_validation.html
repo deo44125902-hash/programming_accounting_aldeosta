@@ -1,0 +1,42 @@
+<!-- ... head section ... -->
+<link rel="stylesheet" href="form_validation_styles.css">
+<!-- ... body section ... -->
+<form id="employeeSalaryForm" method="post" action="#" novalidate>
+    <fieldset>
+        <legend>Employee Information</legend>
+        <p>
+            <label for="employeeName">Full Name:</label><br>
+            <input type="text" id="employeeName" name="employeeName"
+    required placeholder="Employee's full name">
+            <span class="error-message" id="employeeNameError"></span>
+        </p>
+        <p>
+            <label for="employeeID">Employee ID:</label><br>
+            <input type="text" id="employeeID" name="employeeID"
+    required placeholder="Employee ID/NIK">
+            <span class="error-message" id="employeeIDError"></span>
+        </p>
+        <!-- ... other inputs ... -->
+        <p>
+            <strong>Gender:</strong><br>
+            <input type="radio" id="male" name="gender" value="Male"
+    required>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender"
+    value="Female">
+            <label for="female">Female</label>
+            <span class="error-message" id="genderError"></span>
+        </p>
+        <p>
+            <label for="employeeEmail">Email Address:</label><br>
+            <input type="email" id="employeeEmail"
+    name="employeeEmail" placeholder="email@company.com">
+            <span class="error-message"
+    id="employeeEmailError"></span>
+        </p>
+        <!-- ... rest of the form ... -->
+    </fieldset>
+    <input type="submit" value="Submit Salary Data">
+    <input type="reset" value="Reset Form">
+</form>
+<script src="form_validation.js"></script>
